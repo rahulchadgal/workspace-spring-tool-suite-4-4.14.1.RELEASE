@@ -1,0 +1,6 @@
+package com.example.java.mockito;
+
+public class TestNgNnumbers {
+	
+	private CreateNumber createnumber;
+}
