@@ -1,0 +1,6 @@
+package com.example.repository;
+
+@Respository
+public class OrderRepositroy {
+
+}

@@ -1,21 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-23T16:34:45 IST" name="Default suite" finished-at="2022-05-23T16:34:46 IST" duration-ms="512">
+  <suite started-at="2022-05-26T13:03:13 IST" name="Default suite" finished-at="2022-05-26T13:03:15 IST" duration-ms="2659">
     <groups>
     </groups>
-    <test started-at="2022-05-23T16:34:45 IST" name="Default test" finished-at="2022-05-23T16:34:46 IST" duration-ms="512">
-      <class name="com.example.java.mockito.TestNgNnumbers">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.example.java.mockito.TestNgNnumbers@1af2d44a]" started-at="2022-05-23T16:34:45 IST" name="init" finished-at="2022-05-23T16:34:46 IST" duration-ms="465" status="PASS">
+    <test started-at="2022-05-26T13:03:13 IST" name="Default test" finished-at="2022-05-26T13:03:15 IST" duration-ms="2659">
+      <class name="com.example.onlineApiTest.TestNg">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.onlineApiTest.TestNg@36916eb0]" started-at="2022-05-26T13:03:13 IST" name="beforeTest" finished-at="2022-05-26T13:03:13 IST" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="TestNg()[pri:0, instance:com.example.java.mockito.TestNgNnumbers@1af2d44a]" started-at="2022-05-23T16:34:46 IST" name="TestNg" finished-at="2022-05-23T16:34:46 IST" duration-ms="21" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method signature="addEmployee()[pri:0, instance:com.example.onlineApiTest.TestNg@36916eb0]" started-at="2022-05-26T13:03:13 IST" name="addEmployee" finished-at="2022-05-26T13:03:14 IST" duration-ms="912" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestNg -->
-      </class> <!-- com.example.java.mockito.TestNgNnumbers -->
+        </test-method> <!-- addEmployee -->
+        <test-method signature="updateEmployee()[pri:0, instance:com.example.onlineApiTest.TestNg@36916eb0]" started-at="2022-05-26T13:03:14 IST" name="updateEmployee" finished-at="2022-05-26T13:03:15 IST" depends-on-methods="com.example.onlineApiTest.TestNg.addEmployee" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployee -->
+        <test-method signature="getEmployee()[pri:0, instance:com.example.onlineApiTest.TestNg@36916eb0]" started-at="2022-05-26T13:03:15 IST" name="getEmployee" finished-at="2022-05-26T13:03:15 IST" depends-on-methods="com.example.onlineApiTest.TestNg.updateEmployee" duration-ms="711" status="FAIL">
+          <exception class="org.springframework.web.client.HttpClientErrorException$TooManyRequests">
+            <message>
+              <![CDATA[429 Too Many Requests: "<!DOCTYPE html><EOL><html lang="en"><EOL>    <head><EOL>        <meta charset="utf-8"><EOL>        <meta name="viewport" content="width=device-width, initial-scale=1"><EOL><EOL>        <title>Too Many Requests</title><EOL><EOL>        <!-- Fonts --><EOL>        <link rel="dns-prefetch" href="//fonts.gstatic.com"><EOL>        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"><EOL><EOL>        <!-- Styles --><EOL>        <style><EOL>            html, body {<EOL>                background-color: #fff;<EOL>                color: #636b6f;<EOL>                font-family: 'Nunito', sans-serif;<EOL>                font-weight: 100;<EOL>                height: 100vh;<EOL>                margin: 0;<EOL>            }<EOL><EOL>            .full-height {<EOL>                height: 100vh;<EOL>            }<EOL><EOL>            .flex-center {<EOL>                align-items: center;<EOL>                display: flex;<EOL>                justify-content: center;<EOL>            }<EOL><EOL>            .position-ref {<EOL>                position: relative;<EOL>            }<EOL><EOL>            .code {<EOL>                border-right: 2px solid;<EOL>                font-size: 26px;<EOL>                padding: 0 15px 0 15px;<EOL>                text-align: center;<EOL>            }<EOL><EOL>            .message {<EOL>                font-size: 18px;<EOL>                text-align: center;<EOL>            }<EOL>        </style><EOL>    </head><EOL>    <body><EOL>        <div class="flex-center position-ref full-height"><EOL>            <div class="code"><EOL>                429            </div><EOL><EOL>            <div class="message" style="padding: 10px;"><EOL>                Too Many Requests            </div><EOL>        </div><EOL>    </body><EOL></html><EOL>"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.springframework.web.client.HttpClientErrorException$TooManyRequests: 429 Too Many Requests: "<!DOCTYPE html><EOL><html lang="en"><EOL>    <head><EOL>        <meta charset="utf-8"><EOL>        <meta name="viewport" content="width=device-width, initial-scale=1"><EOL><EOL>        <title>Too Many Requests</title><EOL><EOL>        <!-- Fonts --><EOL>        <link rel="dns-prefetch" href="//fonts.gstatic.com"><EOL>        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"><EOL><EOL>        <!-- Styles --><EOL>        <style><EOL>            html, body {<EOL>                background-color: #fff;<EOL>                color: #636b6f;<EOL>                font-family: 'Nunito', sans-serif;<EOL>                font-weight: 100;<EOL>                height: 100vh;<EOL>                margin: 0;<EOL>            }<EOL><EOL>            .full-height {<EOL>                height: 100vh;<EOL>            }<EOL><EOL>            .flex-center {<EOL>                align-items: center;<EOL>                display: flex;<EOL>                justify-content: center;<EOL>            }<EOL><EOL>            .position-ref {<EOL>                position: relative;<EOL>            }<EOL><EOL>            .code {<EOL>                border-right: 2px solid;<EOL>                font-size: 26px;<EOL>                padding: 0 15px 0 15px;<EOL>                text-align: center;<EOL>            }<EOL><EOL>            .message {<EOL>                font-size: 18px;<EOL>                text-align: center;<EOL>            }<EOL>        </style><EOL>    </head><EOL>    <body><EOL>        <div class="flex-center position-ref full-height"><EOL>            <div class="code"><EOL>                429            </div><EOL><EOL>            <div class="message" style="padding: 10px;"><EOL>                Too Many Requests            </div><EOL>        </div><EOL>    </body><EOL></html><EOL>"
+at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:137)
+at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:361)
+at com.example.onlineApiTest.TestNg.getEmployee(TestNg.java:136)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.web.client.HttpClientErrorException$TooManyRequests -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployee -->
+        <test-method signature="deleteEmployee()[pri:0, instance:com.example.onlineApiTest.TestNg@36916eb0]" started-at="2022-05-26T13:03:15 IST" name="deleteEmployee" finished-at="2022-05-26T13:03:15 IST" depends-on-methods="com.example.onlineApiTest.TestNg.getEmployee" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNg.deleteEmployee()[pri:0, instance:com.example.onlineApiTest.TestNg@36916eb0] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNg.deleteEmployee()[pri:0, instance:com.example.onlineApiTest.TestNg@36916eb0] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployee -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.onlineApiTest.TestNg@36916eb0]" started-at="2022-05-26T13:03:15 IST" name="afterTest" finished-at="2022-05-26T13:03:15 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.example.onlineApiTest.TestNg -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
