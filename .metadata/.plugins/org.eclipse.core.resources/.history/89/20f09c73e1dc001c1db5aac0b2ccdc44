@@ -105,6 +105,14 @@ public class TestNg {
 
 	}
 
+	/**
+	 * Test Method to Get employee using HTTP GET request
+	 * 
+	 * Verifies GET action Status Code Verifies Name exists in Response Body
+	 * 
+	 * @throws IOException
+	 * @throws ParseException
+	 */
 	@Test(dependsOnMethods = "updateEmployee", enabled = true)
 	void getEmployee() throws IOException, ParseException {
 		String getURI = "http://dummy.restapiexample.com/api/v1/employee/" + this.employeeId;

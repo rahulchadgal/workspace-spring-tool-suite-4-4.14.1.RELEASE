@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\chadg\AppData\Local\Temp\testng-eclipse-51873799\testng-customsuite.xml</span>
+                    <span>C:\Users\chadg\AppData\Local\Temp\testng-eclipse-1174569371\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -218,7 +218,7 @@
                   <a name="deleteEmployee">
                   </a> <!-- deleteEmployee -->
                   <span class="method-name">deleteEmployee</span>
-                  <div class="stack-trace">java.lang.Throwable: Method TestNg.deleteEmployee()[pri:0, instance:com.example.onlineApiTest.TestNg@36916eb0] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method TestNg.deleteEmployee()[pri:0, instance:com.example.onlineApiTest.TestNg@290222c1] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -269,7 +269,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\chadg\AppData\Local\Temp\testng-eclipse-51873799\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\chadg\AppData\Local\Temp\testng-eclipse-1174569371\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -278,7 +278,14 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.example.onlineApiTest.TestNg&quot;/&gt;
+      &lt;class name=&quot;com.example.onlineApiTest.TestNg&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;getEmployee&quot;/&gt;
+          &lt;include name=&quot;deleteEmployee&quot;/&gt;
+          &lt;include name=&quot;updateEmployee&quot;/&gt;
+          &lt;include name=&quot;addEmployee&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.example.onlineApiTest.TestNg --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -322,15 +329,15 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addEmployee')
 data.setCell(0, 2, 'com.example.onlineApiTest.TestNg')
-data.setCell(0, 3, 912);
+data.setCell(0, 3, 747);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getEmployee')
+data.setCell(1, 1, 'updateEmployee')
 data.setCell(1, 2, 'com.example.onlineApiTest.TestNg')
-data.setCell(1, 3, 711);
+data.setCell(1, 3, 674);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'updateEmployee')
+data.setCell(2, 1, 'getEmployee')
 data.setCell(2, 2, 'com.example.onlineApiTest.TestNg')
-data.setCell(2, 3, 686);
+data.setCell(2, 3, 650);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'deleteEmployee')
 data.setCell(3, 2, 'com.example.onlineApiTest.TestNg')
@@ -372,25 +379,25 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">addEmployee</span>
-                <span class="method-start">331 ms</span>
+                <span class="method-start">238 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateEmployee</span>
-                <span class="method-start">1247 ms</span>
+                <span class="method-start">988 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getEmployee</span>
-                <span class="method-start">1935 ms</span>
+                <span class="method-start">1663 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteEmployee</span>
-                <span class="method-start">2649 ms</span>
+                <span class="method-start">2315 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">2651 ms</span>
+                <span class="method-start">2317 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
