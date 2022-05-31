@@ -3,16 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.example.onlineApiTest.TestNg">
+      <class name="com.example.onlineApiTest.CrudOnlineApi">
         <methods>
-          <include name="afterTest"/>
-          <include name="addEmployee"/>
-          <include name="getEmployee"/>
+          <include name="addValues"/>
+          <include name="updateValues"/>
+          <include name="getValues"/>
           <include name="beforeTest"/>
-          <include name="updateEmployee"/>
-          <include name="deleteEmployee"/>
         </methods>
-      </class> <!-- com.example.onlineApiTest.TestNg -->
+      </class> <!-- com.example.onlineApiTest.CrudOnlineApi -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

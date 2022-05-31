@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="poc_jnuit"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+    <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
+        <mapEntry key="com.example.controller.OrderController" value="bookOrder"/>
+        <mapEntry key="com.example.dataprovider.Dataprovider" value="createdata1;verifyData1"/>
+        <mapEntry key="com.example.demo.Main" value="test;afterMethod;afterSuite;beforeClass;Main;beforeMethod;afterClass;beforeTest;afterTest;beforeSuite"/>
+        <mapEntry key="com.example.demo.ParentClass" value="parentBeforeClass;parentAfterClass;ParentClass;parentBeforeTest;parentAfterTest;parentBeforeSuite;parentAfterMethod;parentAfterSuite;parentBeforeMethod"/>
+        <mapEntry key="com.example.demo.PocJnuitApplication" value="main"/>
+        <mapEntry key="com.example.demo.PocJnuitApplicationTests" value="contextLoads"/>
+        <mapEntry key="com.example.demo.SampleRetryAnalyzer" value="retry"/>
+        <mapEntry key="com.example.entity.Order" value="Order;setQty;hashCode;setPrice;setId;canEqual;getId;toString;getPrice;setName;Order;getQty;equals;getName"/>
+        <mapEntry key="com.example.java.mockito.CreateNumber" value="getThreeDigitNumber"/>
+        <mapEntry key="com.example.java.mockito.TestNgNnumbers" value="init;TestNg"/>
+        <mapEntry key="com.example.java.mockito.TestWithMockito" value="testQuery"/>
+        <mapEntry key="com.example.onlineApiTest.TestNg" value="addEmployee;afterTest;beforeTest;deleteEmployee;updateEmployee;getEmpIdFromResponse;getEmployee"/>
+        <mapEntry key="com.example.service.OrderService" value="saveOrder"/>
+    </mapAttribute>
+    <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+        <listEntry value="com.example.dataprovider.Dataprovider"/>
+        <listEntry value="com.example.java.mockito.TestWithMockito"/>
+        <listEntry value="com.example.demo.SampleRetryAnalyzer"/>
+        <listEntry value="com.example.service.OrderService"/>
+        <listEntry value="com.example.demo.ParentClass"/>
+        <listEntry value="com.example.OrderServiceTest.ControllerTest"/>
+        <listEntry value="com.example.controller.OrderController"/>
+        <listEntry value="com.example.java.mockito.TestNgNnumbers"/>
+        <listEntry value="com.example.demo.PocJnuitApplication"/>
+        <listEntry value="com.example.demo.PocJnuitApplicationTests"/>
+        <listEntry value="com.example.entity.Order"/>
+        <listEntry value="com.example.onlineApiTest.TestNg"/>
+        <listEntry value="com.example.demo.Main"/>
+        <listEntry value="com.example.repository.OrderRepository"/>
+        <listEntry value="com.example.java.mockito.CreateNumber"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+    <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+    <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+    <intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

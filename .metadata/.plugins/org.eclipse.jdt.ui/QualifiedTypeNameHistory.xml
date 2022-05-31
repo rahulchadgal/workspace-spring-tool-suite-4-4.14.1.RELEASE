@@ -14,7 +14,6 @@
     <fullyQualifiedTypeName name="org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest"/>
     <fullyQualifiedTypeName name="com.example.service.OrderService"/>
     <fullyQualifiedTypeName name="org.springframework.test.web.servlet.MockMvc"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
     <fullyQualifiedTypeName name="org.testng.Assert"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.core.JsonParser"/>
@@ -30,4 +29,5 @@
     <fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
     <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
     <fullyQualifiedTypeName name="org.json.JSONObject"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 </qualifiedTypeNameHistroy>
