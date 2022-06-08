@@ -37,4 +37,6 @@
 		<item value="org.sonatype.m2e.mavenarchiver.feature:0.17.5.202002191804"/>
 		<item value="org.testng.eclipse:7.4.0.202106051955"/>
 	</list>
+	<section name="NewWizardAction">
+	</section>
 </section>

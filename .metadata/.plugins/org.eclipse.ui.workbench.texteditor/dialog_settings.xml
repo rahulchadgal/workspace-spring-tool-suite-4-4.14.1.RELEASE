@@ -6,7 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="package com.example.demo;"/>
 		<list key="findhistory">
+			<item value="package com.example.demo;"/>
+			<item value="ity &lt;Employee&gt; getEmployeeById(@PathVariable(&quot;id&quot;) long id){"/>
+			<item value="&#x09;public ResponseEntity &lt;Employee&gt; getEmployeeById(@PathVariable(&quot;id&quot;) long id){"/>
 		</list>
 		<list key="replacehistory">
 		</list>
