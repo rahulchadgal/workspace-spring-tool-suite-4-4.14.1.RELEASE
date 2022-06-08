@@ -138,7 +138,6 @@ INDEX VERSION 1.131+C:\Users\chadg\Documents\workspace-spring-tool-suite-4-4.14.
 1620863522.index
 2698302746.index
 3584321561.index
-1197126532.index
 1887242808.index
 2697524531.index
 3632860402.index

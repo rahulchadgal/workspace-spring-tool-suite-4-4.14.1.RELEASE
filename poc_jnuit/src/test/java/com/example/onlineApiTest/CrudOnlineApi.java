@@ -1,11 +1,12 @@
 package com.example.onlineApiTest;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.text.ParseException;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.junit.Assert;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -55,8 +56,8 @@ public class CrudOnlineApi {
 		System.out.println("response :" + response);
 		dataId = getIdfromJson(responsebody);
 		System.out.println("\ndataId :" + dataId);
-		Assert.assertTrue(responsebody.contains(dataId));
-		Assert.assertEquals(response.getStatusCode(), HttpStatus.CREATED);
+		AssertJUnit.assertTrue(responsebody.contains(dataId));
+		AssertJUnit.assertEquals(response.getStatusCode(), HttpStatus.CREATED);
 		
 		
 		
@@ -90,7 +91,7 @@ public class CrudOnlineApi {
 		
 	//	Assert.assertTrue(responsebody.contains("update_zozo100"));
 
-		Assert.assertEquals(response.getStatusCode(), HttpStatus.OK);
+		AssertJUnit.assertEquals(response.getStatusCode(), HttpStatus.OK);
 		
 		
 	}
@@ -105,7 +106,7 @@ public class CrudOnlineApi {
 		//System.out.println("response :" + response);
 		responsebody = response.getBody().toString();
 		System.out.println("responsebody :" + responsebody);
-		Assert.assertTrue(responsebody.contains("zozo100"));
-		Assert.assertEquals(response.getStatusCode(),HttpStatus.OK);
+		AssertJUnit.assertTrue(responsebody.contains("zozo100"));
+		AssertJUnit.assertEquals(response.getStatusCode(),HttpStatus.OK);
 	}
 }
