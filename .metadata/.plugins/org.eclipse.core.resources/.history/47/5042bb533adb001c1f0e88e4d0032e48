@@ -1,7 +1,0 @@
-package com.example.repository;
-
-import com.example.entity.Order;
-
-public interface OrderRepository extends jpaRespository<Order, Integer> {
-
-}
